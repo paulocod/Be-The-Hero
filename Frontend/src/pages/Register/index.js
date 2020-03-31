@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import api from '../../services/api';
-import './styles.css';
+import { Container, Content, Section, Form, InputGroup } from './styles.js';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -31,20 +31,20 @@ export default function Register() {
   }
 
   return (
-    <div className="register-container">
-      <div className="content">
-        <section>
+    <Container>
+      <Content>
+        <Section>
           <img src={logoImg} alt="Be The Hero"/>
 
           <h1>Cadastro</h1>
           <p>Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG.</p>
 
-          <Link className="back-link" to="/">
+          <Link to="/">
             <FiArrowLeft size={16} color="#e02041" />
-            Não tenho Cadastro</Link>
-        </section>
+            Já tenho Cadastro</Link>
+        </Section>
 
-        <form onSubmit={handleRegister}>
+        <Form onSubmit={handleRegister}>
           <input 
           placeholder="Nome"
           value={name}
@@ -64,7 +64,7 @@ export default function Register() {
           onChange={e => setWhatsapp(e.target.value)}
           />
 
-          <div className="input-group">
+          <InputGroup>
             <input
               placeholder="Cidade"
               value={city}
@@ -78,11 +78,11 @@ export default function Register() {
             onChange={e => setUf(e.target.value)}
             />
 
-          </div>
+          </InputGroup>
 
-          <button className="button" type="submit">Cadastrar</button>
-        </form>
-      </div>
-    </div>
+          <button type="submit">Cadastrar</button>
+        </Form>
+      </Content>
+  </Container>
   );
 }

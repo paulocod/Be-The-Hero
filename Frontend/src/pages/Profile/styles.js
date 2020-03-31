@@ -1,31 +1,53 @@
-.profile-container {
+import styled from 'styled-components';
+
+export const Container = styled.div`
   width: 100%;
   max-width: 1180;
   padding: 0 30px;
   margin: 32px auto;
+  
+  h1 {
+  margin-top: 80px;
+  margin-bottom: 24px;
 }
-
-.profile-container header {
+`
+  export const Header = styled.header`
   display: flex;
   align-items: center;
-}
 
-.profile-container header span {
+  span {
   font-size: 20px;
   margin-left: 24px;
 }
 
-.profile-container header img {
+  img {
   height: 64px;
 }
 
-.profile-container header a {
+  a {
+  width: 100%;
+  height: 60px;
+  background: #e02041;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 16px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  transition: filter 0.2s;
   width: 260px;
   margin-left: auto;
   margin-top: 0;
 }
+  a:hover {
+    filter: brightness(90%);
+  }
 
-.profile-container header button {
+  button {
   height: 60px;
   width: 60px;
   border-radius: 4px;
@@ -35,52 +57,48 @@
   transition: border-color 0.2s;
 }
 
-.profile-container header button:hover {
+  button:hover {
   border-color: #999;
 }
-
-.profile-container h1 {
-  margin-top: 80px;
-  margin-bottom: 24px;
-}
-
-.profile-container ul {
+`
+  export const Ul = styled.ul`
   display: 	grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
   list-style: none;
-}
 
-.profile-container ul li {
+  li {
   background: #fff;
   padding: 24px;
   border-radius: 8px;
   position: relative;
 }
 
-.profile-container ul li button {
+  button {
   position: absolute;
   right: 24px;
   top: 24px;
   border: 0;
+  background-color: #fff;
 }
 
-.profile-container ul li button:hover {
+  button:hover {
   opacity: 0.8;
 }
 
-.profile-container ul li strong {
+  strong {
   display: block;
   margin-bottom: 16px;
   color: #41414d;
 }
 
-.profile-container ul li p + strong {
+  p + strong {
   margin-top: 32px;
 }
 
-.profile-container ul li p {
+  p {
   color: #737380;
   line-height: 21px;
   font-size: 16px;
 }
+`;
