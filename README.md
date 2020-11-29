@@ -36,7 +36,7 @@ As Organizações não Governamentais são organizações sem fins lucrativos, c
 <br>
 🎓 <strong>Quem Representou?</strong>
 <br>
-A semana foi feita pelo <strong>Diego Fernandes e sua magnifica equipe</strong>
+A semana foi feita pelo <strong>Diego Fernandes e sua equipe</strong>
 <br>
 <br>
 💪 <strong>Quem ajudou muito nas duvidas?</strong>
