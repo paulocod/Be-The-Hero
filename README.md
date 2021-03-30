@@ -1,4 +1,5 @@
-<h1 align="center">:clap: Semana Omnistack 11:clap:</h1>
+<h1 align="center">:clap: Semana Omnistack 11:clap:</h1><h1 align="center">:clap: Semana Omnistack 11:clap:</h1>
+<img width="1280" height="720" src="https://user-images.githubusercontent.com/53629713/78046421-83da0180-734d-11ea-8653-e69a90f1cf84.png">
 <br>
 🚀 <strong>Tecnologias usadas</strong>
 <br>
